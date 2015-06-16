@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="ifa.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+	</script>
+	<title>IFA Home</title>
+
+</head>
+
+<body>
+	<nav.main>
+		<div>
+			<p class="ifalogo"> IFA </p>
+			<p class="ifatext"> Information for Action </p>
+			<ul class="main">
+				<li class="main">Reports</li>
+				<li class="mainm">About</li>
+			</ul>
+		</div>
+	</nav>
+	<p class="hide"> Hide Menu</p>
+	<div class="projectlongform">	
+		<div class="rightcolumnlongform"> 
+			<h1> Moving on Up
+
+			</h1>
+			<div class="imagelongformcontainer">
+				<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/SMALL,_WELL-CARED-FOR_GARDENS_WITH_WROUGHT-IRON_FENCES_ADORN_THESE_HOUSES_ON_3RD_STREET_NEAR_PROSPECT_PARK,_BROOKLYN_-_NARA_-_551729.jpg/1024px-SMALL,_WELL-CARED-FOR_GARDENS_WITH_WROUGHT-IRON_FENCES_ADORN_THESE_HOUSES_ON_3RD_STREET_NEAR_PROSPECT_PARK,_BROOKLYN_-_NARA_-_551729.jpg" class="imagelongformcontainer">
+				<button>Click to Animate</button>
+				<script>
+					$(document).ready(function() {
+					$("button").click(function(){
+						$(".imagelongformcontainer").animate({
+   						 	width: "50%",
+          					opacity: 0.5
+      					  }, 3000);
+      				 });
+					$(".imagelongformcontainer").hover(function(){
+						$(".imagelongformcontainer").animate({
+							opacity: 0.5
+						}, 1000);
+					});
+					$(".imagelongformcontainer").click(function(){
+						$(".imagelongformcontainer").animate({
+							opacity: 1
+						}, 1000);
+					});
+					$(".imagelongformcontainer").click(function(){
+						$(".imagelongformcontainer").animate({
+							width: "100%",
+							opacity: 1
+						}, 1000);
+					});
+
+					$(".hide").click(function(){
+						$("ul").fadeOut(1000);
+        				});
+      				});					
+				</script>
+				<!-- ON the above script, I want to work on how to have multiple click events. SO I could click a button that would make it reduce in size, then click again to restore. -->
+			</div>
+			<p class="narrative"> 
+					Lorem ipsum dolor sit amet, has prompta bonorum et, postea principes his te. Sit an nisl euripidis, sea molestiae prodesset cu. Quis paulo fuisset ea sea. Suas veniam tincidunt cu vis, audiam albucius platonem sea ei. An illum iudico audire quo, ut vel errem verear. Appareat vivendum mei ut, mea eu aeque maluisset.
+
+					No agam volumus suavitate nec. Sumo commune usu ei, his ceteros appareat persecuti at. Has dicat tollit ridens ei, ut per causae oblique percipit. Has eu atqui consul interesset, tale consetetur cum at.
+
+					Id erat neglegentur vim, perpetua erroribus conclusionemque eum an. Alia brute id sea, viderer sapientem no est. Ad vix erat justo theophrastus. Ei eos postea aliquid luptatum, prompta scaevola pro ne.
+
+			</p>
+		</div>	
+		<div class="leftcolumnlongform"> 
+			<h1> Moving on Up
+
+			</h1>
+			<p class="narrative"> 
+					Lorem ipsum dolor sit amet, has prompta bonorum et, postea principes his te. Sit an nisl euripidis, sea molestiae prodesset cu. Quis paulo fuisset ea sea. Suas veniam tincidunt cu vis, audiam albucius platonem sea ei. An illum iudico audire quo, ut vel errem verear. Appareat vivendum mei ut, mea eu aeque maluisset.
+
+					No agam volumus suavitate nec. Sumo commune usu ei, his ceteros appareat persecuti at. Has dicat tollit ridens ei, ut per causae oblique percipit. Has eu atqui consul interesset, tale consetetur cum at.
+
+					Id erat neglegentur vim, perpetua erroribus conclusionemque eum an. Alia brute id sea, viderer sapientem no est. Ad vix erat justo theophrastus. Ei eos postea aliquid luptatum, prompta scaevola pro ne.
+			</p>
+		</div>
+		<div id="footer">
+			<ul id='footer'>
+				<li id="footer">
+				Reports
+				</li>
+				<li id="footer">
+				Reports
+				</li>
+
+			</ul>
+
+			</div>
+		</div>	
+	
+	</div>
+</div>
+</body>
+
+</html>
